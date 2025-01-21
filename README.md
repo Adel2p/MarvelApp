@@ -13,10 +13,6 @@ Easiest and simple way to download code from Github is to download the whole cod
 
 You can then save the zip file into a convenient location on your computer and start working on it.
 
-Another way to get the code is using git:
-
-git clone git@github.com:jeprubio/marvel-compose.git
-
 ## Prerequisites
 
 Android studio should be installed in order to run the app.
