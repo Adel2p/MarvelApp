@@ -23,32 +23,6 @@ Android studio should be installed in order to run the app.
 
 Follow the instructions at https://developer.android.com/studio/install depending on which SO your computer is running.
 
-## How to run the application
-
-Open the code in android studio.
-
-Edit the `local.properties` file adding a value for `MARVEL_PRIVATE_KEY` and `MARVEL_PUBLIC_KEY`. E.g.:
-```
-MARVEL_PRIVATE_KEY=1234567890abcdef1234567890abcdef12345678
-MARVEL_PUBLIC_KEY=abcdefghijklmnopqrstuvwxyz123456
-```
-
-Wait until gradle finishes and press the play button.
-
-To run the unit tests: `./gradlew lint testDebug --continue`
-
-To run the UI tests: `./gradlew connectedDebugAndroidTest`
-
-To record the screenshots test: `./gradlew executeScreenshotTests -Precord`
-
-To execute the screenshots test: `./gradlew executeScreenshotTests`
-
-## Screenshots
-
-![Characters List](/screenshots/readme/1-characters-list.webp)
-![Character Details](/screenshots/readme/2-character-details.webp)
-![Comics List](/screenshots/readme/3-comics-list.webp)
-![Comic Details](/screenshots/readme/4-comic-details.webp)
 
 ## Libraries Used
 
@@ -61,17 +35,3 @@ To execute the screenshots test: `./gradlew executeScreenshotTests`
 - [Dagger-Hilt](https://developer.android.com/training/dependency-injection/hilt-android) - For dependency injection.
 
 - [Coil](https://github.com/coil-kt/coil) - Loading and caching images.
-
-## Testing libraries
-
-- [Junit5](https://junit.org/junit5/docs/current/user-guide/) - For writing tests.
-
-- [Mockk](https://mockk.io/) - A mocking library similar to mockito that allows you to mock suspend functions.
-
-- [kotlinx-coroutines-test](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-test/) - It has test utilities for working with coroutines.
-
-- [Espresso](https://developer.android.com/training/testing/espresso) - e2e tests
-
-- [Compose UI testing](https://developer.android.com/jetpack/compose/testing) - Compose UI tests 
-
-- [Shot](https://github.com/pedrovgs/Shot) - Screenshot tests
